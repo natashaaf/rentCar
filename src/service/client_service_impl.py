@@ -1,8 +1,8 @@
 from typing import List, Optional
-from model.client import Client
-from repository.client_repository import ClientRepository
-from repository.i_client_repository import IClientRepository
-from service.i_client_service import IClientService
+from src.model.client import Client
+from src.repository.client_repository import ClientRepository
+from src.repository.i_client_repository import IClientRepository
+from src.service.i_client_service import IClientService
 
 
 class ClientServiceImpl(IClientService):

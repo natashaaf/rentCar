@@ -1,6 +1,6 @@
 from typing import List, Optional
-from model.client import Client
-from repository.i_client_repository import IClientRepository
+from src.model.client import Client
+from src.repository.i_client_repository import IClientRepository
 
 
 class ClientRepository(IClientRepository):

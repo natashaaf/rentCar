@@ -1,7 +1,7 @@
 from typing import List, Optional
-from model.client import Client
-from service.client_service_impl import ClientServiceImpl
-from service.i_client_service import IClientService
+from src.model.client import Client
+from src.service.client_service_impl import ClientServiceImpl
+from src.service.i_client_service import IClientService
 
 
 class ClientController:
