@@ -4,7 +4,7 @@ from controller.client_controller import ClientController
 
 class Dialog:
     """
-    Clase que gestiona la interfaz de usuario por consola.
+    Clase que gestiona la interfaz de usuario por consola. 
     Presenta los menús y recoge la entrada del usuario.
     """
     
@@ -27,16 +27,16 @@ class Dialog:
                 if choice == 1:
                     self._client_manager()
                 elif choice == 2:
-                    # TODO: Implementar gestión de coches
+                    self.Coche_manager()
                     print("Funcionalidad pendiente de implementar")
                 elif choice == 3:
-                    # TODO: Implementar gestión de oficinas
+                    self.Oficina_manager()
                     print("Funcionalidad pendiente de implementar")
                 elif choice == 4:
-                    # TODO: Implementar gestión de modelos
+                    self.Modelo_manager()
                     print("Funcionalidad pendiente de implementar")
                 elif choice == 5:
-                    # TODO: Implementar gestión de alquileres
+                    self.Alquiler_manager()
                     print("Funcionalidad pendiente de implementar")
                 elif choice == 0:
                     print("Bye!!")
@@ -112,4 +112,7 @@ class Dialog:
                 print("[ERROR] You must type a number!!!", file=sys.stderr)
             except Exception as e:
                 print(f"[ERROR] {str(e)}", file=sys.stderr)
+
+
+
 

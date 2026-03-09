@@ -1,2 +1,1 @@
-from .dialog import Dialog
 

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
-from src.model.client import Client
+from src.model.Client import Client 
 
 
 class IClientRepository(ABC):

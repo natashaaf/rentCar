@@ -1,5 +1,5 @@
 from typing import List, Optional
-from src.model.client import Client
+from src.model.Client import Client
 from src.repository.client_repository import ClientRepository
 from src.repository.i_client_repository import IClientRepository
 from src.service.i_client_service import IClientService
@@ -23,7 +23,7 @@ class ClientServiceImpl(IClientService):
             client: El cliente a añadir
         """
         self._repository.add(client)
-    
+            
     def delete_by_id(self, id: int) -> None:
         """
         Elimina un cliente por su ID.

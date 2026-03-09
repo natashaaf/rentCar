@@ -1,5 +1,5 @@
 from typing import List, Optional
-from src.model.client import Client
+from src.model.Client import Client
 from src.service.client_service_impl import ClientServiceImpl
 from src.service.i_client_service import IClientService
 
@@ -24,6 +24,7 @@ class ClientController:
             surname: Apellidos del cliente
         """
         client = Client(dni, name, surname)
+        
         self._service.add(client)
     
     def delete_by_id(self, id: int) -> None:

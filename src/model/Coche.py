@@ -1,6 +1,8 @@
 class Coche:
-    def __init__(self, matricula, modelo, oficina):
+    def __init__(self, matricula, modelo, office):
         self.matricula = matricula
         self.modelo = modelo
-        self.oficina = oficina
+        self.oficina = office
         self.listaAlquileres = []
+
+        

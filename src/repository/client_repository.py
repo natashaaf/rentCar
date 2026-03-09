@@ -1,5 +1,5 @@
 from typing import List, Optional
-from src.model.client import Client
+from src.model.Client import Client
 from src.repository.i_client_repository import IClientRepository
 
 
@@ -14,7 +14,7 @@ class ClientRepository(IClientRepository):
     def __new__(cls):
         if cls._instance is None:
             cls._instance = super().__new__(cls)
-            cls._instance._clients: List[Client] = []
+            cls._instance._clients = []
             cls._instance._add_initial_clients()
         return cls._instance
     
@@ -115,7 +115,7 @@ class ClientRepository(IClientRepository):
     def clean_up(self) -> None:
         """Limpia todos los clientes del repositorio."""
         self._clients = []
-    
+
     def _add_initial_clients(self) -> None:
         """Añade los clientes iniciales al repositorio."""
         self.add(Client("87896685P", "Sergio", "Rodríguez"))
@@ -124,4 +124,5 @@ class ClientRepository(IClientRepository):
         self.add(Client("56789012B", "Lucía", "López"))
         self.add(Client("34567890C", "Carlos", "Martínez"))
         self.add(Client("78901234D", "Ana", "Sánchez"))
+
 
