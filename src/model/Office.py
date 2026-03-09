@@ -1,4 +1,4 @@
-class Oficina:
+class Office:
     def __init__(self, direccion, cargoExtra):
         self.direccion = direccion
         self.cargoExtra = cargoExtra
